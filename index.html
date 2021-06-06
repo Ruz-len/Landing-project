@@ -10,84 +10,273 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;0,900;1,200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body> <!-- class="dark" -->
 
-     <!-- ***** Header and Starter Area Start ***** -->
+    <!-- header -->
     <div class="header">
         <div class="container header-container">
-            <div class="header-title">Pizza Napoli</div>
-                <ul class="header-nav">
-                    <li class="scroll-to-section"><a href="#main" class="header-nav-link">Главная</a></li>
-                    <li class="scroll-to-section"><a href="#about" class="header-nav-link">О нас</a></li>
-                    <li class="scroll-to-section"><a href="#menu" class="header-nav-link">Меню</a>
-                        <ul class="header-sub-list">
-                            <li><a href="#" class="header-sub-link">Маргарита</a></li>
-                            <li><a href="#" class="header-sub-link">BBQ</a></li>
-                            <li><a href="#" class="header-sub-link">Пепперони</a></li>
-                            <li><a href="#" class="header-sub-link">Италия</a></li>
-                            <li><a href="#" class="header-sub-link">Реджина</a></li>
-                            <li><a href="#" class="header-sub-link">Римская</a></li>
-                            <li><a href="#" class="header-sub-link">Четыре сыра</a></li>
-                            <li><a href="#" class="header-sub-link">Маринара</a></li>
+            <a href="/" class="logo">Pizza Napoli</a>
+            <div class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-item">
+                        <a href="#main" class="navigation-link">Главная</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#about" class="navigation-link">О нас</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#menu" class="navigation-link">Меню</a>
+                        <ul class="navigation-sublist">
+                            <li class="navigation-subitem">
+                                <a href="#magrarita" class="navigation-sublink">Маргарита</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#bbq" class="navigation-sublink">BBQ</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#pepperoni" class="navigation-sublink">Пепперони</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#italia" class="navigation-sublink">Италия</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#regina" class="navigation-sublink">Реджина</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#rimskaja" class="navigation-sublink">Римская</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#four-cheese" class="navigation-sublink">Четыре сыра</a>
+                            </li>
+                            <li class="navigation-subitem">
+                                <a href="#marinara" class="navigation-sublink">Маринара</a>
+                            </li>
                         </ul>
                     </li>
-                    <li class="scroll-to-section"><a href="#contacts" class="header-nav-link">Контакты</a></li>
+                    <li class="navigation-item">
+                        <a href="#feachures" class="navigation-link">Особенности</a>
+                    </li>
+                    <li class="navigation-item">
+                        <a href="#contacts" class="navigation-link">Контакты</a>
+                    </li>
                 </ul>
+                <input type="checkbox" id="burger">
+                <label class="burger" for="burger">
+                    <span class="burger-item"></span>
+                    <span class="burger-item"></span>
+                    <span class="burger-item"></span>
+                </label>
+            </div> 
         </div>   
     </div>
+    <!-- end header -->
+
+    <!-- starter -->
     <div class="starter" id="main">
-        <div class="container starter-container">
-            <div class="starter-title">Pizza Napoli</div>
-            <p class="starter-desc">лучшая пицца в городе</p>
-            <a href="#menu" class="starter-link">Наше меню</a>
-        </div>
-        <img src="img/top-left-bg.jpg" alt="" class="starter-left-image">
-        <img src="img/slide-1.jpg" class="starter-right-image">
-    </div>
-
-    <!-- ***** Header and Starter Area End ***** -->
-    
-    <!-- ***** About Area Starts ***** -->
-
-    <section id="about" class="container">
-        <div class="about-left">
-            <h2 class="about-title">О НАС</h2>
-            <h2 class="about-header">Только приятные гастрономические воспоминания для вас</h2>
-            <p class="about-text">
-                Уважаемые наши гости, мы готовим пиццу специально для вас, поэтому у нас не бывает готовой пиццы. Каждый заказ готовится после его принятия, поэтому его придётся подождать. Время приготовления от 5-12 минут в зависимости от сложности пиццы, плюс ко всему бывает, что перед вашим заказом есть небольшая очередь, что увеличивает время отдачи вам вашего заказа. 
-            </p>
-            <p class="about-text">
-                Если вы не хотите ждать, то можете сделать заказ по телефону +7(8412)53-03-93 . Вам помогут с выбором и соориентируют по времени приготовления.
-            </p>
-            <div class="about-cards">
-                <img src="img/making-1.jpg" alt="" class="about-img">
-                <img src="img/making-2.jpg" alt="" class="about-img">
-                <img src="img/making-3.jpg" alt="" class="about-img">
+        <div class="starter-left">
+            <div class="starter-content">
+                <div class="starter-title">Pizza Napoli</div>
+                <p class="starter-desc">лучшая пицца в городе</p>
+                <a href="#menu" class="starter-link">Наше меню</a>
             </div>
         </div>
-        <div class="about-right">
-            <video
-                src="video/video.mp4"
-                autoplay="autoplay"
-                width="100%"
-                height="100%" class="about-video">
-            </video>
+        <div class="starter-right"></div>
+    </div>
+    <!-- end starter -->
+
+    <!-- about -->
+    <section id="about" class="section about">
+        <div class="about-container container">
+            <div class="about-left">
+                <h2 class="about-title">О НАС</h2>
+                <h3 class="about-subtitle">Только приятные гастрономические воспоминания для вас</h3>
+                <p class="about-text">
+                    Уважаемые наши гости, мы готовим пиццу специально для вас, поэтому у нас не бывает готовой пиццы. Каждый заказ готовится после его принятия, поэтому его придётся подождать. Время приготовления от 5-12 минут в зависимости от сложности пиццы, плюс ко всему бывает, что перед вашим заказом есть небольшая очередь, что увеличивает время отдачи вам вашего заказа. 
+                </p>
+                <p class="about-text">
+                    Если вы не хотите ждать, то можете сделать заказ по телефону +7(8412)53-03-93 . Вам помогут с выбором и соориентируют по времени приготовления.
+                </p>
+                <div class="about-cards">
+                    <img src="img/making-1.jpg" alt="" class="about-img">
+                    <img src="img/making-2.jpg" alt="" class="about-img">
+                    <img src="img/making-3.jpg" alt="" class="about-img">
+                </div>
+            </div>
+            <div class="about-right">
+                <video src="video/video.mp4" autoplay="autoplay" muted loop class="about-video">Ваш браузер не поддерживает воспроизведение видео</video>
+            </div>
         </div>
     </section>
-    <!-- ***** About Area Ends ***** -->
+    <!-- end about -->
 
-    <!-- ***** Menu Area Starts ***** -->
-    <section id="menu" class="container">
+    <!-- menu -->
+    <section id="menu" class="section menu">
+        <div class="menu-container container">
+            <h2 class="menu-title">НАШЕ МЕНЮ</h2>
+            <h3 class="menu-subtitle">Наша пицца с исключительным вкусом</h3> 
+        </div>
+        <div class="menu-cards">
+            <ul class="cards-list">
+                <li class="card-item" id="margarita">
+                    <div class="price">450руб</div>
+                    <img src="img/margarita.jpg" alt="Маргарита" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Маргарита</h3>
+                        <p class="desc-text">Томат, сыр моцарелла и базилик</p>
+                    </div> 
+                </li>
+                <li class="card-item" id="bbq">
+                    <div class="price">700руб</div>
+                    <img src="img/BBQ.jpg" alt="BBQ" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">BBQ</h3>
+                        <p class="desc-text">Соус барбекю с говядиной, курицей, вяленными помидорами и маринованными огурчиками на хрустящем тесте</p>
+                    </div>
+                </li>
+                <li class="card-item" id="pepperoni">
+                    <div class="price">500руб</div>
+                    <img src="img/pepperoni.jpg" alt="Пепперони" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Пепперони</h3>
+                        <p class="desc-text">Томатный соус, сыр, Пепперони</p>
+                    </div>
+                </li>
+                <li class="card-item" id=italia>
+                    <div class="price">550руб</div>
+                    <img src="img/italia.jpg" alt="Италия" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Италия</h3>
+                        <p class="desc-text">Свежая моцарелла с соусом песто и свежими помидорами черри</p>
+                    </div>
+                <li class="card-item" id="regina">
+                    <div class="price">500руб</div>
+                    <img src="img/Regina.jpg" alt="Реджина" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Реджина</h3>
+                        <p class="desc-text">Свежая руккола, пармезан, свежие помидоры, сыр</p>
+                    </div>
+                </li>
+                <li class="card-item" id="rimskaja">
+                    <div class="price">650руб</div>
+                    <img src="img/rimskaja.jpg" alt="Римская" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Римская</h3>
+                        <p class="desc-text">Соус, чёрные оливки, моцарелла, пармезан, курица и руккола</p>
+                    </div>
+                </li>
+                <li class="card-item" id=four-cheese>
+                    <div class="price">650руб</div>
+                    <img src="img/four-cheese.jpg" alt="Четыре сыра" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Четыре сыра</h3>
+                        <p class="desc-text">Сыры: моцарелла, пармезан, дор-блю, эмменталь</p>
+                    </div>
+                </li>
+                <li class="card-item" id="marinara">
+                    <div class="price">500руб</div>
+                    <img src="img/marinara-anchous.jpg" alt="Маринара" class="card-img">
+                    <div class="desc">
+                        <h3 class="desc-title">Маринара</h3>
+                        <p class="desc-text">Соус с анчоусами, чёрные оливки, сыр</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
 
     </section>
-    <!-- ***** Menu Area Ends ***** -->
+    <!-- end menu -->
 
-    <!-- ***** Contacts Area Starts ***** -->
-    <section id="contacts" class="container">
-
+    <section id="feachures" class="section feachures">
+        <div class="feachures-container container">
+            <h2 class="feachures-title">ОСОБЕННОСТИ МЕНЮ И ДОПОЛНИТЕЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h2>
+            <h3 class="feachures-subtitle">Мы предлагаем только лучшие ингредиенты</h3> 
+        </div>
+        <div class="feachures-cards">
+            <ul class="feachures-cards-list">
+                <li class="feachures-card-item">
+                    <img src="img/chilli.jpg" alt="" class="feachures-img">
+                    <div class="img-cover"></div>
+                    <ul class="social-icons">
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-vk"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-instagram"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <div class="feachures-desc">
+                        <h3 class="feachures-desc-title">Тем, кому нравится поострее</h3>
+                        <p class="feachures-desc-text">Добавим остроты блюду по вашей просьбе</p>
+                    </div>
+                </li>
+                <li class="feachures-card-item">
+                    <img src="img/green2.jpg" alt="" class="feachures-img">
+                    <div class="img-cover"></div>
+                    <ul class="social-icons">
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-vk"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-instagram"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <div class="feachures-desc">
+                        <h3 class="feachures-desc-title">Свежие ингредиенты</h3>
+                        <p class="feachures-desc-text">Для вас только свежая зелень</p>
+                    </div>
+                </li>
+                <li class="feachures-card-item">
+                    <img src="img/coffee.jpg" alt="" class="feachures-img">
+                    <div class="img-cover"></div>
+                    <ul class="social-icons">
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-vk"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-instagram"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <div class="feachures-desc">
+                        <h3 class="feachures-desc-title">Кофе</h3>
+                        <p class="feachures-desc-text">Свежемолотый бодрящий кофе специально для наших гостей</p>
+                    </div>
+                </li>
+                <li class="feachures-card-item">
+                    <img src="img/pit-pizza.jpg" alt="" class="feachures-img">
+                    <div class="img-cover"></div>
+                    <ul class="social-icons">
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-vk"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-instagram"></i></a></li>
+                        <li class="icon-link"><a href="#" class=icon><i class="fab fa-facebook-f"></i></a></li>
+                    </ul>
+                    <div class="feachures-desc">
+                        <h3 class="feachures-desc-title">Пицца-пит</h3>
+                        <p class="feachures-desc-text">Небольшая пицца-пит для легкого перекуса</p>
+                    </div>
+                </li>
+            </ul>
+        </div>  
     </section>
-    <!-- ***** contacts Area Ends ***** -->
+
+
+    <!-- contacts-->
+    <section id="contacts" class="section contacts">
+        <div class="container contacts-container">
+            <div class="contacts-left">
+               <div class="contacts-left-header">
+                   <h2 class="contacts-title">СВЯЖИТЕСЬ С НАМИ</h2>
+                    <h3 class="contacts-subtitle">Наш адрес: г.Пенза, ул.Антонова, д. 1а, часы работы с 12.00 до 22.00</h3>
+                    <p class="contacts-text">Сделайте заказ к определенному времени или напишите нам свои пожелания</p>
+               </div> 
+               <div class="contacts-info">
+                    <div class="info-box">
+                        <h2 class="info-title"></h2>
+                        <a href="tel:78412530393" class="contact-phone">Tel.: +7(8412)53-03-93</a>
+                        <a href="#" class="contact-icon"><i class="fas fa-phone-alt"></i></a>  
+                    </div>
+                    <div class="info-box"> 
+                        <h2 class="info-title"></h2>
+                        <a href="mailto:pizzanapoli@mail.ru" class="contact-mail">E-mail: pizzanapoli@mail.ru</a>
+                        <a href="#" class="contact-icon"> <i class="fas fa-envelope"></i></a>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- end contacts -->
 
     <footer>
         
