@@ -439,10 +439,10 @@ body.dark {
 }
 /* end menu */
 
-/* start feachures */
-.feachures-container {}
+/* start features */
+.features-container {}
 
-.feachures-title {
+.features-title {
 	display: flex;
 	align-items: center;
 	margin-bottom: 2rem;
@@ -454,7 +454,7 @@ body.dark {
     color: var(--color-accent);    
 }
 
-.feachures-title::before {
+.features-title::before {
 	content: '';
 
 	display: block;
@@ -465,7 +465,7 @@ body.dark {
     background-color: var(--color-accent);
 }
 
-.feachures-subtitle {
+.features-subtitle {
 	margin-bottom: 2rem;
 
 	font-size: 3rem;
@@ -473,17 +473,17 @@ body.dark {
 	text-transform: capitalize;
 }
 
-/* feachures cards */
-.feachures-cards {}
+/* features cards */
+.features-cards {}
 
-.feachures-cards-list {
+.features-cards-list {
 	display: flex;
 	justify-content: space-between;
 
 	list-style: none;
 }
 
-.feachures-card-item {
+.features-card-item {
 	position: relative;
 	padding: 5px;
 
@@ -497,14 +497,14 @@ body.dark {
 	transition: all .5s;
 }
 
-.feachures-img {
+.features-img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	display: flex;
 
 	width: 100%;
-	height: 80%;
+	height: 70%;
 	
 	border-radius: 0.3rem;
 
@@ -517,7 +517,7 @@ body.dark {
     top: 0;
 
 	width: 100%;
-    height: 80%;
+    height: 70%;
 
     background-color: var(--color-text);
     border-radius: 0.3rem;
@@ -526,9 +526,9 @@ body.dark {
     transition: opacity 0.3s;
 }
 
-.feachures-desc {
+.features-desc {
 	position: absolute;
-	top: 80%;
+	top: 70%;
 	left: 0;
 	padding: 5px 0;
 	width: 100%;
@@ -539,27 +539,28 @@ body.dark {
 	align-items: center;
 }
 
-.feachures-desc-text {
+.features-desc-text {
 	text-align: center;
 }
 
-.feachures-desc-title {
+.features-desc-title {
 	font-size: 20px;
     font-weight: 700;
     color: var(--color-text);
+	text-align: center;
 
 	transition: all .3s;
 }
 
-.feachures-card-item:hover {
+.features-card-item:hover {
 	border: 1px solid var(--color-accent);
 }
 
-.feachures-card-item:hover .feachures-desc-title {
+.features-card-item:hover .feachures-desc-title {
 	color: var(--color-accent);
 }
 
-.feachures-card-item:hover .img-cover {
+.features-card-item:hover .img-cover {
 	opacity: 0.7;
 }
 
@@ -597,7 +598,7 @@ body.dark {
 .icon:hover {
 	background-color: var(--color-accent);
 }
-/* feachures end */
+/* features end */
 
 
 
