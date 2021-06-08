@@ -72,7 +72,7 @@
                         </ul>
                     </li>
                     <li class="navigation-item">
-                        <a href="#feachures" class="navigation-link">Особенности</a>
+                        <a href="#features" class="navigation-link">Особенности</a>
                     </li>
                     <li class="navigation-item">
                         <a href="#contacts" class="navigation-link">Контакты</a>
@@ -274,28 +274,59 @@
             <div class="contacts-left">
                <div class="contacts-left-header">
                    <h2 class="contacts-title">СВЯЖИТЕСЬ С НАМИ</h2>
-                    <h3 class="contacts-subtitle">Наш адрес: г.Пенза, ул.Антонова, д. 1а, часы работы с 12.00 до 22.00</h3>
+                    <h3 class="contacts-subtitle">Наш адрес: <br> г. Пенза, ул. Антонова, д. 1а, <br> часы работы с 12.00 до 22.00</h3>
                     <p class="contacts-text">Сделайте заказ к определенному времени или напишите нам свои пожелания</p>
                </div> 
                <div class="contacts-info">
                     <div class="info-box">
-                        <h2 class="info-title"></h2>
-                        <a href="tel:78412530393" class="contact-phone">Tel.: +7(8412)53-03-93</a>
+                        <h2 class="info-title">Наш телефон</h2>
+                        <a href="tel:78412530393" class="contact-info">Tel.: +7(8412)53-03-93</a>
                         <a href="#" class="contact-icon"><i class="fas fa-phone-alt"></i></a>  
                     </div>
                     <div class="info-box"> 
-                        <h2 class="info-title"></h2>
-                        <a href="mailto:pizzanapoli@mail.ru" class="contact-mail">E-mail: pizzanapoli@mail.ru</a>
+                        <h2 class="info-title">E-mail</h2>
+                        <a href="mailto:pizzanapoli@mail.ru" class="contact-info">E-mail: pizzanapoli@mail.ru</a>
                         <a href="#" class="contact-icon"> <i class="fas fa-envelope"></i></a>
                     </div>
                </div>
             </div>
+            <form class="contacts-right" name="Anket" method="GET" action="">
+                <h2 class="contacts-right-title">Ваш заказ</h2>
+                <input type="text" class="box-input name" name="name" placeholder="Как к Вам обращаться" maxlength="200" required>
+                <input type="tel" class="box-input phone" placeholder="Тел. +7(XXX)XX-XX" name="phone" required>
+                <p class="box-text">Выберите пиццу</p>
+                <select class="box-select">
+                    <option selected>Маргарита</option>
+                    <option>BBQ</option>
+                    <option>Пепперони</option>
+                    <option>Италия</option>
+                    <option>Реджина</option>
+                    <option>Римская</option>
+                    <option>Четыре сыра</option>
+                    <option>Маринара</option>
+                </select>
+                <p class="time-text">Введите время</p>
+                <input type="time" class="box-input time" name="selected-time" list="time-list">
+                <textarea class="box-textarea" placeholder="Дополнительные пожелания" rows="10"></textarea>
+                <button class="btn" type="submit">Отправить заказ</button>
+            </form>
         </div>
     </section>
     <!-- end contacts -->
 
-    <footer>
-        
+    <footer class="section footer">
+        <div class="container footer">
+            <ul class="footer-social-icons">
+                <li class="footer-link"><a href="https://vk.com/pizzanapoli58" class=footer-icon><i class="fab fa-vk"></i></a></li>
+                <li class="footer-link"><a href="https://www.instagram.com/pizzanapolipenza/" class=footer-icon><i class="fab fa-instagram"></i></a></li>
+                <li class="footer-link"><a href="#" class=footer-icon><i class="fab fa-facebook-f"></i></a></li>
+            </ul> 
+            <div class="starter-title">Pizza Napoli</div>
+            <div class="footer-texts">
+                <p class="footer-text">© Copyright Klassy Cafe Co.</p>
+                <p class="footer-text">Design: Templatemo, 2021</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
