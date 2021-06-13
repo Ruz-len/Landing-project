@@ -1,5 +1,5 @@
 const swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 30,
     loop: true,
     autoplay: {
@@ -10,6 +10,9 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
+        0: {
+            slidesPerView: 1
+        },
         576: {
             slidesPerView: 3
         },
