@@ -24,3 +24,13 @@ const swiper = new Swiper('.swiper-container', {
         }
     }
 });
+
+document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelectorAll('.burger, .navigation').forEach(item => item.classList.toggle('active'));
+});
+
+document.querySelectorAll('.navigation-item').forEach(item => {
+    item.addEventListener('click', () => {
+        item.querySelector('.navigation-sublist').classList.toggle('active');
+    })
+});
